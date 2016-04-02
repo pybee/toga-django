@@ -1,0 +1,13 @@
+<script id="batavia-toga" type="application/python-bytecode">
+    {{ toga }}
+</script>
+
+<script id="batavia-bootstrap" type="application/python-bytecode">
+    {{ bootstrap }}
+</script>
+
+{% for name, payload in callbacks.items %}
+<script id="batavia-{{ name }}" type="application/python-bytecode">
+    {{ payload }}
+</script>
+{% endfor %}
