@@ -26,6 +26,7 @@ setup(
     url='http://pybee.org/toga',
     packages=find_packages(exclude=['tests']),
     install_requires=[
+        'django==1.9',
     ],
     license='New BSD',
     classifiers=[
