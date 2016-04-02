@@ -87,7 +87,8 @@ class Window:
         py_compile.compile(sourcefile)
         with open(os.path.join(
                     os.path.dirname(sourcefile),
-                    '__pycache__/%s.cpython-34.pyc' % os.path.splitext(os.path.basename(sourcefile))[0]
+                    '__pycache__',
+                    '%s.cpython-34.pyc' % os.path.splitext(os.path.basename(sourcefile))[0],
                 ), 'rb') as compiled:
             toga = base64.encodebytes(compiled.read())
 

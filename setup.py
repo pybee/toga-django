@@ -4,7 +4,7 @@ import re
 from setuptools import setup, find_packages
 
 
-with io.open('./toga_cocoa/__init__.py', encoding='utf8') as version_file:
+with io.open('./toga_django/__init__.py', encoding='utf8') as version_file:
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file.read(), re.M)
     if version_match:
         version = version_match.group(1)
@@ -17,24 +17,24 @@ with io.open('README.rst', encoding='utf8') as readme:
 
 
 setup(
-    name='toga-cocoa',
+    name='toga-django',
     version=version,
-    description='A Cocoa (OS X) backend for the Toga widget toolkit.',
+    description='A Django backend for the Toga widget toolkit.',
     long_description=long_description,
     author='Russell Keith-Magee',
     author_email='russell@keith-magee.com',
     url='http://pybee.org/toga',
     packages=find_packages(exclude=['tests']),
     install_requires=[
-        'rubicon-objc',
+        'django==1.9',
     ],
     license='New BSD',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
-        'Environment :: MacOS X :: Cocoa',
-        'Operating System :: MacOS :: MacOS X',
+        'Environment :: Web Environment',
+        'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',

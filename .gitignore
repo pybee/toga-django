@@ -1,0 +1,14 @@
+*.pyc
+*~
+.*.sw[op]
+*.egg-info
+.coverage
+dist
+build
+_build
+distribute-*
+local
+.tox
+__pycache__
+.idea
+static/*
