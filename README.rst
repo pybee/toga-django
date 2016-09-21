@@ -3,7 +3,7 @@ toga-django
 
 A Django backend for the `Toga widget toolkit`_.
 
-** Toga requires Python 3 **
+**Toga requires Python 3**
 
 This package isn't much use by itself; it needs to be combined with `the core Toga library`_.
 
